@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- string methods
+    1 charAt;
+    2 charcodeAt() -->
+    <script>
+        var str1="this is string";
+        console.log(str1.length);
+       
+        // for(i in str1){
+        //      console.log(str1.charAt(i));
+        //  }
+var a=(str2)=>{
+    var i_count=0 ,space=0;
+    for(i in str2)
+    {
+        if(str2.charAt(i)==' '){
+            space++;
+        }
+        if(str2.charAt(i)=='i'){
+            i_count++;
+        }
+    }
+    console.log("number of i is",i_count," ","number of space is",space);
+
+
+
+}
+a(str1)
+
+var ascii=(str3)=>{
+    for(i in str3){
+        console.log(str3.charCodeAt(i));
+    }
+
+}
+ascii(str1);
+
+
+    </script>
+</body>
+</html>
