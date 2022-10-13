@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <style>
+    div{
+        background-color: blue;
+        height: 200px;
+        width: 200px;
+        color: white;
+    }
+    #num5{
+        background-color: aqua;
+    }
+    </style>
+</head>
+<body>
+    <div onmousemove="move()" id="div1">
+        onmousemove
+    </div>
+
+    <br>
+    <div onmouseenter="enter()">
+        onmouseenter
+        <h1 id="num" >num</h1>
+        enter
+    </div><br>
+
+    <div onmouseleave="leave()" id="num1">
+        onmouseleave
+        <h1  >num</h1>
+        enter
+    </div><br>
+    <div onmousewheel="wheel()" id="num2">
+        onmousewheel
+        <h1  >num</h1>
+        enter
+    </div>
+
+
+<br>
+    <div onmouseup="up()" id="num3">
+        onmouseup
+        <h1  >num</h1>
+        enter
+    </div>
+<br>
+<div onmousedown="down()" id="num4">
+    onmousedown
+    <h1  >num</h1>
+    enter
+</div><br>
+<div ondblclick="dbl()" id="num5">
+    double click
+    <h1  >num</h1>
+    enter
+</div>
+
+
+
+    <p onclick="color()" id="p">i am p tag</p>
+
+    <script>
+        function color(){
+            document.getElementById("p").style.backgroundColor="green"
+        }
+        function move(){
+            document.getElementById("div1").innerHTML="mouse moved"
+
+        }
+        function enter(){
+          
+            document.getElementById("num").style.backgroundColor="green";
+
+        }
+        function leave(){
+         
+            document.getElementById("num1").style.backgroundColor="green";
+
+        }
+
+        function wheel(){
+         
+         document.getElementById("num2").style.backgroundColor="crimson";
+
+     }
+
+     function up(){
+         
+         document.getElementById("num3").style.backgroundColor="orange";
+
+     }
+     function down(){
+         
+         document.getElementById("num4").style.backgroundColor="rgb(34,123,67)";
+
+     }
+
+
+     function dbl(){
+
+         
+        let tag=document.createElement("p");
+        tag.append("i am para tag");
+
+        let ele=document.getElementById("num5");
+        ele.append(tag)
+
+     }
+
+    </script>
+    
+</body>
+</html>
