@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<div id="hello"></div>
+<button onclick="addimg()">img</button>
+<button onclick="addsrc()">src</button>
+<button onclick="addcss()">css</button>
+<body>
+    <script>
+        function addimg(){
+            var p=document.createElement("img");
+
+           
+
+            var e=document.getElementById("hello");
+            e.appendChild(p);
+        }
+        function addsrc(){
+      
+
+           
+
+            document.getElementsByTagName("img")[0].setAttribute("src","img1.jpg")
+
+        }
+        function addcss(){
+      
+
+           
+
+      document.getElementsByTagName("img")[0].style.cssText="width:400px;height:400px;background-size:cover;"
+
+
+      document.getElementById("hello").style.cssText="display:flex;justify-content:center;"
+
+  }
+
+    </script>
+</body>
+</html>

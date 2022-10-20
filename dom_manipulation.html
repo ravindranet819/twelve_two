@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hi{
+            background-color: rgb(2, 78, 78);
+            color: white;
+            font-size: 30px;
+            width: 400px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+<p id="para" width="500px">i am para </p>
+<a href="google.com" id="a">ewfqwf</a>
+<div id="hello">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id, aliquid!</div>
+<button onclick="dom()">click on me</button>
+
+    <script>
+        function dom()
+        {
+            //  document.getElementById("para").innerHTML="changed text";
+            // document.getElementById("para").style.backgroundColor="crimson";
+            // document.getElementById("para").style.cssText="font-size:48px;color:white;background-image:linear-gradient(blue,red,black)";
+
+            // document.getElementById("a").removeAttribute("href")
+            // document.getElementById("hello").setAttribute("class","hi");
+            // var num= document.getElementById("hello").getAttribute("id");
+            // console.log(num);
+           
+
+           
+           var p=document.createElement("p");
+
+           var s=document.createTextNode("hello i am para");
+           p.appendChild(s);
+
+           var e=document.getElementById("hello");
+           e.appendChild(p);
+           
+
+
+        }
+
+    </script>
+
+
+</body>
+</html>
