@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        var v=78;
+        function ds(){
+            let fg=67;
+           function vs(){
+            console.log(v);
+
+           }
+           return vs;
+        }
+        ds()();
+    </script> -->
+    <!-- <script>
+        for(var i=0;i<10;i++){
+            setTimeout(()=>{
+                document.write(i+"<br><br>")
+            },1000);
+
+        }
+    </script> -->
+    <script>
+        var arr=[
+            {first:"amrit ",last:"lal" ,age:23,},
+            {first:"pyare ",last:"mohan" ,age:13},
+            {first:"mohini ",last:"das" ,age:20},
+            {first:"mohini ",last:"das" ,age:13},
+            {first:"mohini ",last:"das" ,age:20}
+        ]
+        console.log(arr.filter((item)=>{
+            return item.age>20;
+        }).map((i)=>{
+           
+            return i.first+" "+i.last;
+
+        }))
+    </script>
+</body>
+</html>
