@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tab1,
+        .tab2,
+        .tab3 {
+            background-color: deeppink;
+            color: black;
+        }
+
+        .tab1 {
+            display: block;
+        }
+
+        .tab2 {
+            display: none;
+        }
+
+        .tab3 {
+            display: none;
+        }
+
+        #th1 {
+            background-color: deeppink;
+            color: black;
+        }
+
+        #th2 {
+            background-color: deeppink;
+            color: black;
+        }
+
+        #th3 {
+            background-color: deeppink;
+            color: black;
+        }
+        .tool li{
+            display: inline;
+            background-color: crimson;
+            color: white;
+            font-size: 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <ul class="tool">
+            <li id="th1" onclick="one()">Home</li>
+            <li id="th2" onclick="two()">About</li>
+            <li id="th3" onclick="three()">Contact</li>
+        </ul>
+       
+        <div class="tab1" id="div1">Propellant grain. Solid propellants have fuel and
+            oxidiser mixed together in a suitable proportion.
+            Finished propellarlt body called grain have rigid shape
+            and form as per design. This shape is obtained by
+            casting or extrusion under pressure. On composition
+            basis there are two types of propellants.
+            Homogeneous: They are so called because in
+            these oxidiser and fuel are at molecular level. Famous
+            example being 'double base' type which is a mixture
+            of nitrocellulose and nitroglycerine in a certain
+            proportion. They are gelled into a semi-rigid body
+            and extruded. They have a fairly long shelf life of
+            more than twelve years. </div>
+        
+        <div class="tab2" id="div2"> India Today News breaks the most important stories in and from India and abroad in six sections - India News, Business News, Cinema News, Sports News, World News and Lifestyle News. India News keeps tab of every development in all parts of India. Business News has the latest business updates from India and abroad. Cinema News tracks the latest from Bollywood, Hollywood and the South film industries and TV channels. Sports News has all the sports from India and abroad with a special focus on cricket. Lifestyle News presents developments that impact one's lifestyle. World News makes sense of news across the world and its impact on India</div>
+        
+        <div class="tab3" id="div3">events, commencing with the receipt of an electrical
+            pulse and heat generation and heat transfer from the
+            ignition products (hot gases and particles) to the
+            propellant grain surface. Flame spread is achieved to
+            bum the entire surface area to fill the free volume of
+            the chamber. Ignitess can be categorized as
+            pyrotechnic, pyrogen, etc. Conventional igniters are
+            made of heat releasing compounds such as black
+            powder, metal oxides and metal powder formulations
+            and initiated by electrical means by passing current
+            through an element (wire) which is imbedded in the
+            pyrotechnic mixture. </div>
+    </div>
+    <script>
+        function one() {
+            var a = document.getElementById("div1");
+            var b = document.getElementById("div2");
+            var c = document.getElementById("div3");
+            if (b || c) {
+                a.style.display = "block"
+                b.style.display = "none"
+                c.style.display = "none"
+            }
+        }
+        function two() {
+            var a = document.getElementById("div1");
+            var b = document.getElementById("div2");
+            var c = document.getElementById("div3");
+            if (a || c) {
+                a.style.display = "none"
+                b.style.display = "block"
+                c.style.display = "none"
+            }
+        }
+        function three() {
+            var a = document.getElementById("div1");
+            var b = document.getElementById("div2");
+            var c = document.getElementById("div3");
+            if (a || b) {
+                a.style.display = "none"
+                b.style.display = "none"
+                c.style.display = "block"
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
